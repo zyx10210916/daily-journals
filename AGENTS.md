@@ -2,6 +2,12 @@
 
 GitHub 仓库 `zyx10210916/daily-journals` 是刊物原稿与 EPUB 的保存位置。聊天每日消息继续发送，正文与归档保持一致。不要使用 Google Drive 作为本项目目的地。
 
+## 阅读入口
+
+已发布书架：https://zyx10210916.github.io/daily-journals/
+
+在线刊物路径：`/daily-journals/<slug>/`；日稿阅读路径：`/daily-journals/<slug>/issues/YYYY-MM-DD/`；EPUB 路径：`/daily-journals/editions/<slug>/YYYY-MM.epub`。当日部署未完成时先提供已保存的 GitHub 原稿链接，不将尚未发布的网页称为已更新。聊天中可附书架入口，正文推送照常。
+
 ## 原稿与刊物
 
 - `content/publications.json` 是刊物配置。`agent` 是「回路」，`world` 是「世界切片」。新刊物添加配置和独立内容目录，避免在页面中写死第三个刊物。

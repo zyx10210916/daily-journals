@@ -1,5 +1,7 @@
 # 日常刊物 · Daily Journals
 
+**[打开云端书架](https://zyx10210916.github.io/daily-journals/)** · [回路](https://zyx10210916.github.io/daily-journals/agent/) · [世界切片](https://zyx10210916.github.io/daily-journals/world/)
+
 一个简洁的云端书架：聊天里收到每日简报，GitHub 留下原稿，按月编成可下载的 EPUB，也可部署为直接阅读的网站。
 
 | 刊物 | 内容 | 十月 EPUB |
