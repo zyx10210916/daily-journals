@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "agent",
+    "title": "回路",
+    "subtitle": "Agent 工程与研究",
+    "description": "关注 Runtime、工具门控、流式事件、状态恢复与多 Agent 协作。",
+    "accent": "#934634",
+    "topics": ["Runtime", "Gate", "Streaming", "State", "Sub-agent", "Evaluation"],
+    "archiveNote": "首批内容为已有聊天简报的整理版，保留原始来源，本次归档未重新核验。"
+  },
+  {
+    "slug": "world",
+    "title": "世界切片",
+    "subtitle": "世界认知早报",
+    "description": "真实人物、冷门职业、商业模式与跨学科知识。每天五分钟，认识一种新的可能。",
+    "accent": "#365c70",
+    "topics": ["人物档案", "隐秘职业", "商业实验", "科学的边界", "生活方式", "跨界知识"],
+    "archiveNote": "首批九篇为已有月刊中找回的部分素材，按原收录日期归档，不代表完整逐日早报。本次迁移未重新核验来源。"
+  }
+]

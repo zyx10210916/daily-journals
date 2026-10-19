@@ -1,0 +1,67 @@
+name: Build bookshelf and monthly EPUBs
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'public/editions/**'
+      - 'public/publication-themes.css'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daily-journals-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm run verify
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bookshelf-static-site
+          path: dist/
+  archive:
+    if: github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild against current main and save EPUBs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            work="$RUNNER_TEMP/journals-$GITHUB_RUN_ID-$attempt"
+            git worktree add --detach "$work" origin/main
+            if (
+              cd "$work"
+              npm run verify && npm run build && git add public/editions public/publication-themes.css || exit 1
+              if git diff --cached --quiet; then exit 0; fi
+              git commit -m 'Update monthly EPUB editions [skip ci]' || exit 1
+              git push origin HEAD:main
+            ); then exit 0; fi
+          done
+          echo 'Could not publish EPUBs after three attempts; inspect the logs and rerun.' >&2
+          exit 1

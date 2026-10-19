@@ -1,0 +1,2 @@
+body[data-journal="agent"]{--accent:#934634}.cover-agent{--accent:#934634;border-left-color:var(--accent)}.cover-agent .book-rule{background:var(--accent)}
+body[data-journal="world"]{--accent:#365c70}.cover-world{--accent:#365c70;border-left-color:var(--accent)}.cover-world .book-rule{background:var(--accent)}

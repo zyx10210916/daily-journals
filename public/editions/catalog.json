@@ -1,0 +1,31 @@
+{
+  "format": "EPUB 3",
+  "editions": [
+    {
+      "slug": "agent",
+      "month": "2026-10",
+      "title": "回路",
+      "file": "agent/2026-10.epub",
+      "updated_through": "2026-10-19",
+      "chapter_count": 6,
+      "source_count": 12,
+      "closed": false,
+      "modified_at": "2026-10-19T05:02:18Z",
+      "content_sha256": "9b83dff21308fd40db930331be094c0300eff5795003d2293f45a42834d92eff",
+      "sha256": "d5c90e6839a227ac1b81a65dde79d47dbd41f716344572a19abdf14a78f46103"
+    },
+    {
+      "slug": "world",
+      "month": "2026-10",
+      "title": "世界切片",
+      "file": "world/2026-10.epub",
+      "updated_through": "2026-10-19",
+      "chapter_count": 6,
+      "source_count": 9,
+      "closed": false,
+      "modified_at": "2026-10-19T05:08:35Z",
+      "content_sha256": "2885e875e6114a896a5f9c5362d033a1188e58360d55d1d5e8d74dd87069a6b3",
+      "sha256": "de771c5abed309ad86681e1f678cb6c4e3dfca3575a2fbcbf1b675f0e49a10ef"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "daily-journals",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare.mjs && node scripts/export.mjs",
+    "dev": "npm run build && python3 -m http.server 4321 --directory dist",
+    "preview": "python3 -m http.server 4321 --directory dist",
+    "verify": "node scripts/prepare.mjs && node scripts/check-site.mjs && node scripts/check-interactions.mjs && python3 scripts/check-epubs.py",
+    "editions": "node scripts/prepare.mjs",
+    "new:issue": "node scripts/new-issue.mjs"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { projectRoot, getPublication } from '../src/lib/publications.mjs';
+const [slug,date]=process.argv.slice(2);
+const publication=getPublication(slug);
+if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '') || new Date(`${date}T00:00:00Z`).toISOString().slice(0,10)!==date) throw new Error('Usage: npm run new:issue -- agent YYYY-MM-DD');
+const directory=path.join(projectRoot,'content',slug);
+fs.mkdirSync(directory,{recursive:true});
+const file=path.join(directory,`${date}.draft.md`);
+const metadata={date,title:'填写标题',summary:'填写导读',topics:[publication.topics[0]],archiveKind:'verified',verifiedAt:date,sources:[]};
+fs.writeFileSync(file,`---\n${JSON.stringify(metadata,null,2)}\n---\n## 本期精选\n\n填写已核实的正文与原始来源，明确区分事实与推断。\n`,{flag:'wx'});
+console.log(`Draft created: ${file}. Complete metadata and sources, then rename to ${date}.md to publish.`);
