@@ -28,9 +28,13 @@ npm run preview
 
 访问 `http://localhost:4321`。输出目录为 `dist/`，包括 EPUB；可整体部署到静态托管服务。
 
-## Cloudflare Pages
+## GitHub Pages
 
-导入此 GitHub 仓库，生产分支选 `main`，构建命令为 `npm run build`，输出目录为 `dist`。使用 Node 22 与 Python 3.12 的构建环境。部署成功后，以 Cloudflare 返回的网址为准；仓库源码并不等于网站已经上线。
+书架使用 GitHub Pages，与原稿和 EPUB 一起保存在本仓库。首次启用时，在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
+
+每次日稿提交后，同一个工作流完成内容校验、月刊生成、EPUB 归档和网站部署。上线地址以 Actions 的 `deploy` 任务输出为准；可在该任务中点击 `github-pages` 环境查看。首次部署需 Pages 已启用，源文件上传成功不代表网站已发布。
+
+网站全部使用相对链接，支持仓库子路径。静态输出仍为 `dist/`。无需 Cloudflare、数据库、额外 npm 依赖或私人访问令牌。
 
 ## 扩展刊物
 

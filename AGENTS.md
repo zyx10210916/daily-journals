@@ -26,7 +26,7 @@ GitHub 仓库 `zyx10210916/daily-journals` 是刊物原稿与 EPUB 的保存位�
 1. 先读当前分支与本文件、刊物配置、最近归档，避免重复主题和日期。
 2. 新日稿用新文件提交。已有同日文件时先比对：相同则跳过，有实质修订则保留来源和修订说明，读取当前 blob SHA 后更新。不要覆盖其他刊物和无关文件。
 3. 多文件提交应基于最新 main，用 expected SHA 更新引用。并发冲突后重新读取再合并，不强推。
-4. 原稿成功提交后，GitHub Actions 会校验并生成 `public/editions/<slug>/YYYY-MM.epub`。不必人工改二进制 EPUB 或 catalog。
+4. 原稿成功提交后，GitHub Actions 会校验、部署 GitHub Pages 书架并生成 `public/editions/<slug>/YYYY-MM.epub`。不必人工改二进制 EPUB 或 catalog。
 5. ChatGPT 回答继续包含当日简报；末尾可附原稿和 EPUB 链接。只在写入成功后称“已归档”。不能核实构建结果时，区分“原稿已保存”和“EPUB 等待构建”。失败时照常发聊天简报并准确说明失败，不创建替代定时任务。
 
 ## 内容要求

@@ -1,4 +1,4 @@
-name: Build bookshelf and monthly EPUBs
+name: Publish bookshelf and monthly EPUBs
 on:
   push:
     branches: [main]
@@ -65,3 +65,26 @@ jobs:
           done
           echo 'Could not publish EPUBs after three attempts; inspect the logs and rerun.' >&2
           exit 1
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: [verify, archive]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/download-artifact@v4
+        with:
+          name: bookshelf-static-site
+          path: dist
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy bookshelf
+        id: deployment
+        uses: actions/deploy-pages@v4
