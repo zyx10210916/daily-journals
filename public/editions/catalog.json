@@ -6,13 +6,13 @@
       "month": "2026-10",
       "title": "回路",
       "file": "agent/2026-10.epub",
-      "updated_through": "2026-10-20",
-      "chapter_count": 7,
-      "source_count": 13,
+      "updated_through": "2026-10-21",
+      "chapter_count": 8,
+      "source_count": 14,
       "closed": false,
-      "modified_at": "2026-10-20T01:36:23Z",
-      "content_sha256": "dfa07683e463265bf43416ad5fc40eb937d0c9d04133d22f5021edd43e6a204d",
-      "sha256": "d697e2ca9b8f5f3af71f7fa6d43627b6b729952ee28a4d1acbe9b73259b60205"
+      "modified_at": "2026-10-21T02:01:37Z",
+      "content_sha256": "21f2ac8ac650549c6cae6061f7a51cf5209eca050a764660ae40332811280d6b",
+      "sha256": "76012fcb5d3f2b012dfef89fdd92a390fca08922a2be4664a3a5c747596f1c00"
     },
     {
       "slug": "world",
