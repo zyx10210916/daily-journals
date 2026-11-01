@@ -9,10 +9,23 @@
       "updated_through": "2026-10-31",
       "chapter_count": 18,
       "source_count": 46,
+      "closed": true,
+      "modified_at": "2026-11-01T00:59:43Z",
+      "content_sha256": "c94d0965b9eb62a7cb2c7a149c9e4fd16d33a87ca1bed7749b4f196d5262c113",
+      "sha256": "ffdf778b84058f7a48b73288e58b4b340a30eeec47aa1a1da632a011fa5866ec"
+    },
+    {
+      "slug": "world",
+      "month": "2026-11",
+      "title": "世界切片",
+      "file": "world/2026-11.epub",
+      "updated_through": "2026-11-01",
+      "chapter_count": 1,
+      "source_count": 7,
       "closed": false,
-      "modified_at": "2026-10-31T01:19:22Z",
-      "content_sha256": "87596db9e3e47842a873e953732ba8144f01a2214adb7a5368cfd4e403847f67",
-      "sha256": "9ce620dde8408f72de35105302255e693f988803265068347751c1b158b69fff"
+      "modified_at": "2026-11-01T00:59:43Z",
+      "content_sha256": "f77d3a28fd01e7d4acbd447f0c4bfdde0c2a1c662cb118baed7917abe00fb820",
+      "sha256": "6b20d19f68d3ed749f28ee5700a24e83e6c0ff561a048249c6dce1dc8cbb9fe4"
     },
     {
       "slug": "world",
@@ -22,10 +35,10 @@
       "updated_through": "2026-10-31",
       "chapter_count": 18,
       "source_count": 82,
-      "closed": false,
-      "modified_at": "2026-10-31T01:06:40Z",
-      "content_sha256": "86820884c7540e936151b0e1f62fe1aac7bca363e20aa9127cb1b90d3ea23f7a",
-      "sha256": "ae8d1f3e910cda48de5dbe480a75b4df75cbbf083b8e23c067d830deda85a3aa"
+      "closed": true,
+      "modified_at": "2026-11-01T00:59:43Z",
+      "content_sha256": "71081ca87873f9680de36a79ad9980492ebd8773335e672a65cc06ad5128bdd5",
+      "sha256": "aa0a92eab1295e223126110e51de7fe2a38a736493afa5d02cd6e221bdeff37a"
     }
   ]
 }
