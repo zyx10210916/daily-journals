@@ -6,13 +6,13 @@
       "month": "2026-11",
       "title": "回路",
       "file": "agent/2026-11.epub",
-      "updated_through": "2026-11-01",
-      "chapter_count": 1,
+      "updated_through": "2026-11-02",
+      "chapter_count": 2,
       "source_count": 3,
       "closed": false,
-      "modified_at": "2026-11-01T01:06:48Z",
-      "content_sha256": "91472456419b4c863bd815caa221c832f21390d286e9f50ab72100e791742617",
-      "sha256": "33cff3c549b8ca908109aca4ad574c10a270996c5278926ab9a3ebb05cfaea31"
+      "modified_at": "2026-11-02T01:14:59Z",
+      "content_sha256": "5d6a03b85bf8851f18061d243ff31d20034177f8a5c90d533f889e4e0f365d35",
+      "sha256": "66b08e90c6c3cfc6cf58f89e271590e5c8e3b6c32954c4fecfa90d11a237f0f6"
     },
     {
       "slug": "agent",
