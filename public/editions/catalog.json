@@ -32,13 +32,13 @@
       "month": "2026-11",
       "title": "世界切片",
       "file": "world/2026-11.epub",
-      "updated_through": "2026-11-01",
-      "chapter_count": 1,
-      "source_count": 7,
+      "updated_through": "2026-11-02",
+      "chapter_count": 2,
+      "source_count": 15,
       "closed": false,
-      "modified_at": "2026-11-01T00:59:43Z",
-      "content_sha256": "f77d3a28fd01e7d4acbd447f0c4bfdde0c2a1c662cb118baed7917abe00fb820",
-      "sha256": "6b20d19f68d3ed749f28ee5700a24e83e6c0ff561a048249c6dce1dc8cbb9fe4"
+      "modified_at": "2026-11-02T01:01:03Z",
+      "content_sha256": "d2444e3d45af95e8d3ba1bf23cb1069e4c50defb9f19ba56822ab3cc4e113dfa",
+      "sha256": "0abe48ea9d60fde49ebd2e8c815d447e348d4cfd089874f19f72027b7ebab109"
     },
     {
       "slug": "world",
